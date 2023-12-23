@@ -1,0 +1,1 @@
+docker service create --name swarm-wordpress -p 80:80 --network swarm-overlay --env WORDPRESS_DB_USER=wordpress --env WORDPRESS_DB_PASSWORD=000000 --env WORDPRESS_DB_HOST=swarm-mysql wordpress

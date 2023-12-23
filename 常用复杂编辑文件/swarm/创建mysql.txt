@@ -1,0 +1,1 @@
+docker service create --name swarm-mysql --network swarm-overlay --env MYSQL_ROOT_PASSWORD=000000 --env MYSQL_DATABASE=wordpress --env MYSQL_USER=wordpress --env MYSQL_PASSWORD=000000 --mount type=volume,source=swarm-volume,destination=/var/lib/mysql mysql:5.7
